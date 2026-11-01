@@ -1,16 +1,55 @@
-# React + Vite
+# 🌍 World Cup Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Title & Description
+A **responsive** and **dark‑mode** web application that gives you real‑time insights into the FIFA World Cup 2026.  It aggregates match data, player statistics, market values, and group standings into a single, easy‑to‑navigate dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Key Features
+- **Match Center** – Live scores, fixtures, and detailed match statistics.
+- **Market Values** – Player valuation explorer with visual charts.
+- **Group Standings** – Points tables for Groups A‑H with hover‑enabled rows.
+- **Top Scorers Leaderboard** – Podium‑style display for the top goal‑scorers.
+- **Dark UI** – Sleek, modern dark theme that automatically respects the OS color‑scheme.
+- **Responsive Layout** – Works on desktop, tablet, and mobile devices.
+- **Reusable Components** – Footer, navigation, and UI elements built for extensibility.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Tech Stack
+| Layer | Technology |
+|-------|------------|
+| Front‑end | **React** (hooks), **JavaScript**, **HTML**, **CSS** (CSS Modules) |
+| Styling | CSS variables, flexbox, responsive design |
+| Routing | `react‑router‑dom` |
+| Build / Dev | **Vite** (fast bundler) |
+| Data Source | Public football APIs (e.g., [API‑Football](https://www.api-football.com/)) – fetched via `fetch`/`axios` |
+| Version Control | Git |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started / Installation Guide
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/world-cup-dashboard.git
+
+# 2️⃣ Change into the project directory
+cd world-cup-dashboard
+
+# 3️⃣ Install dependencies
+npm install   # or `yarn` if you prefer Yarn
+
+# 4️⃣ Run the development server
+npm run dev   # starts Vite dev server at http://localhost:5173
+```
+Open the URL shown in the terminal to explore the dashboard locally.
+
+---
+
+## 🙏 Credits
+Made by **Moniruzzaman**.
+
+---
+
+## 📄 License
+This project is open‑source and available under the **MIT License**. Feel free to fork, contribute, or use the code in your own projects.
