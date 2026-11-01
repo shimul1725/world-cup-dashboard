@@ -1,0 +1,118 @@
+/* TopScorers.css */
+/* Dark‑mode friendly leaderboard with podium */
+.top-scorers {
+  padding: 1.5rem;
+  background-color: var(--bg-section, #0f172a);
+  color: var(--text-primary, #e2e8f0);
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.ts-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent, #fbbf24);
+}
+
+/* Podium layout */
+.ts-podium {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.podium-item {
+  background: var(--podium-bg, #1e293b);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  width: 8rem;
+  position: relative;
+}
+
+.podium-item.rank-1 {
+  background: var(--accent, #fbbf24);
+  color: #0f172a;
+  transform: translateY(-0.5rem);
+}
+
+.podium-item.rank-2 {
+  background: var(--podium-bg, #1e293b);
+  opacity: 0.9;
+}
+
+.podium-item.rank-3 {
+  background: var(--podium-bg, #1e293b);
+  opacity: 0.8;
+}
+
+.podium-rank {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.podium-flag {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.podium-name {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.podium-stats span {
+  display: block;
+  font-size: 0.9rem;
+}
+
+/* Table for the rest */
+.ts-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.ts-table th {
+  background: var(--table-header-bg, #1e293b);
+  color: var(--table-header-fg, #fbbf24);
+  padding: 0.75rem;
+}
+
+.ts-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--row-border, #334155);
+}
+
+.ts-row:hover {
+  background: var(--row-hover, #1e293b);
+}
+
+.ts-flag {
+  margin-right: 0.5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .top-scorers {
+    background-color: #f3f4f6;
+    color: #111827;
+  }
+  .ts-podium .podium-item {
+    background: #e5e7eb;
+    color: #111827;
+  }
+  .ts-podium .podium-item.rank-1 {
+    background: #fbbf24;
+    color: #111827;
+  }
+  .ts-table th {
+    background: #e5e7eb;
+    color: #111827;
+  }
+  .ts-row:hover {
+    background: #e2e8f0;
+  }
+}

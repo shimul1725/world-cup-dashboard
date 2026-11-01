@@ -1,0 +1,62 @@
+/* Footer.css */
+/* Dark mode compatible styles */
+.footer {
+  background-color: var(--bg-footer, #111);
+  color: var(--text-footer, #eee);
+  padding: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-credit {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+.footer-credit-name {
+  color: var(--accent, #fbbf24);
+  font-weight: 600;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--accent, #ff3e00);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.scroll-top-btn:hover {
+  background: var(--accent-hover, #e63900);
+}

@@ -1,0 +1,89 @@
+/* GroupStandings.css */
+/* Dark‑mode friendly styling – uses CSS variables defined at higher level */
+.group-standings {
+  padding: 1.5rem;
+  background-color: var(--bg-section, #0f172a);
+  color: var(--text-primary, #e2e8f0);
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.gs-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--accent, #fbbf24);
+}
+
+.gs-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.gs-tab {
+  background: var(--tab-bg, #1e293b);
+  color: var(--tab-text, #cbd5e1);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.gs-tab:hover {
+  background: var(--tab-bg-hover, #334155);
+}
+
+.gs-tab.active {
+  background: var(--accent, #fbbf24);
+  color: #0f172a;
+}
+
+.gs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.gs-table th {
+  background: var(--table-header-bg, #1e293b);
+  color: var(--table-header-fg, #fbbf24);
+  padding: 0.75rem;
+}
+
+.gs-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--row-border, #334155);
+}
+
+.gs-row:hover {
+  background: var(--row-hover, #1e293b);
+}
+
+@media (prefers-color-scheme: light) {
+  .group-standings {
+    background-color: #f3f4f6;
+    color: #111827;
+  }
+  .gs-tab {
+    background: #e5e7eb;
+    color: #374151;
+  }
+  .gs-tab:hover {
+    background: #d1d5db;
+  }
+  .gs-tab.active {
+    background: #fbbf24;
+    color: #111827;
+  }
+  .gs-table th {
+    background: #e5e7eb;
+    color: #111827;
+  }
+  .gs-row:hover {
+    background: #e2e8f0;
+  }
+}
